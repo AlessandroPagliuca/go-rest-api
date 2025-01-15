@@ -1,9 +1,10 @@
 POST http://localhost:8080/events
 content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QyLmNvbSIsImV4cCI6MTczNjk3NDQ3MCwidXNlcklkIjoyfQ.M2hj58IPleezLqulggc5-MaWwRA1T8W3K_yW5CUI9Dc
 
 {
-   "name" : "Tast event 2",
-   "description" : "Tast desc 2",
+   "name" : "Tast  203",
+   "description" : "Tast deseeddddc 2",
    "location" : "Tast loc 2",
    "dateTime": "2025-01-01T15:30:00.000Z"
 }
