@@ -2,8 +2,8 @@ POST http://localhost:8080/events
 content-type: application/json
 
 {
-   "name" : "Tast name",
-   "description" : "Tast description",
-   "location" : "Tast location",
+   "name" : "Tast event 2",
+   "description" : "Tast desc 2",
+   "location" : "Tast loc 2",
    "dateTime": "2025-01-01T15:30:00.000Z"
 }

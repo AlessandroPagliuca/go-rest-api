@@ -33,20 +33,35 @@ func InitDB() {
 
 // createTables crea le tabelle necessarie nel database SQLite.
 func createTables() {
+	//query creazione table utenti
+	createUsersTable := `
+	CREATE TABLE IF NOT EXISTS users (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		email TEXT NOT NULL UNIQUE,
+		password TEXT NOT NULL
+	)
+	`
+	_, err := DB.Exec(createUsersTable)
+	if err != nil {
+		log.Fatalf("Error creating events table: %v", err)
+	}
+	log.Println("Events table created or already exists.")
+
 	// Query per la creazione della tabella "events"
 	createEventsTable := `
     CREATE TABLE IF NOT EXISTS events (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      name TEXT NOT NULL,
-      description TEXT NOT NULL,
-      location TEXT NOT NULL,
-      dateTime DATETIME NOT NULL,
-      user_id INTEGER
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		name TEXT NOT NULL,
+		description TEXT NOT NULL,
+		location TEXT NOT NULL,
+		dateTime DATETIME NOT NULL,
+		user_id INTEGER,
+		FOREIGN KEY(user_id) REFERENCES user(id)
     )
     `
 
 	// Esegui la query
-	_, err := DB.Exec(createEventsTable)
+	_, err = DB.Exec(createEventsTable)
 	if err != nil {
 		log.Fatalf("Error creating events table: %v", err)
 	}
