@@ -53,23 +53,23 @@ func (u *User) Save() error {
 func (u User) ValidateCredentials() error {
 
 	query := `
-	SELECT password
+	SELECT id, password
 	FROM users
 	WHERE email = ?
 	`
 	row := db.DB.QueryRow(query, u.Email)
 
 	var retrievedPassword string
-	err := row.Scan(&retrievedPassword)
+	err := row.Scan(&u.ID, &retrievedPassword)
 
 	if err != nil {
-		return errors.New("Credentials invalid")
+		return errors.New("Credentials invalid 1")
 	}
 
 	passwordIsValid := utils.CheckPasswordHash(retrievedPassword, u.Password)
 
 	if !passwordIsValid {
-		return errors.New("Credentials invalid")
+		return errors.New("Credentials invalid 2")
 	}
 
 	return nil
