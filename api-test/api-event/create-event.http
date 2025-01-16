@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 content-type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3MzcwMjczNDMsInVzZXJJZCI6MX0.HdFmmh-JIxvyyueC0fmrSEfToqYixz8syjxIIOGiJLM
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwiZXhwIjoxNzM3MDQ5MzUzLCJ1c2VySWQiOjJ9.moRz9hM1lVz8GeX_zxvp_SFfH50CP6yuPBPFQxbTQk4
 
 {
-   "name" : "Tast  203",
+   "name" : "Tast fguyfedguyfeguyh",
    "description" : "Tast deseeddddc 2",
    "location" : "Tast loc 2",
-   "dateTime": "2025-01-01T15:30:00.000Z"
+   "date_time": "2025-01-01T15:30:00.000Z"
 }
