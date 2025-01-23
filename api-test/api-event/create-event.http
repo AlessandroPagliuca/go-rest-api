@@ -1,10 +1,10 @@
-POST http://localhost:8080/events
+POST http://localhost:8080/conferences
 content-type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3MzcwNjYyMTYsInVzZXJJZCI6MX0.tt4LVwqB_cPkJvff5OSR3fkF4sYwkaWhOriSoa9P8Zg
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3Mzc2NTAzNjgsInVzZXJJZCI6MX0.WpMBLeYdypKebc-x8oYWMMRcHQAoA1Evi2r4_5r4ZJo
 
 {
-   "name" : "Tast fguyfedguyfeguyh",
-   "description" : "Tast deseeddddc 2",
-   "location" : "Tast loc 2",
+   "name" : " Angular devcon",
+   "description" : "build mobile app with new features",
+   "location" : "San Diego, California",
    "date_time": "2025-01-01T15:30:00.000Z"
 }

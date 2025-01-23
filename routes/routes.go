@@ -6,7 +6,7 @@ import (
 )
 
 func RegisterRoutes(server *gin.Engine) {
-	const eventPath string = "/events"
+	const eventPath string = "/conferences"
 
 	// ROUTES EVENT
 	server.GET(eventPath, getEvents)

@@ -1,2 +1,2 @@
-DELETE http://localhost:8080/events/1
+DELETE http://localhost:8080/conferences/1
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3MzcwNTIyODEsInVzZXJJZCI6MX0.dSgNiVx7dJ9oayJ5v1nYt2klAln37nwAdF2rrBA9-yU
